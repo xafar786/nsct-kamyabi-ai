@@ -12,7 +12,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || ''
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api'
 const USER_KEY = 'nsct-kamyabi-user'
 const TEST_KEY = 'nsct-kamyabi-test'
 const RESULT_KEY = 'nsct-kamyabi-result'
