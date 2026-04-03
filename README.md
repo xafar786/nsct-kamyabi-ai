@@ -93,7 +93,7 @@ git push -u origin main
 ## Data Notes
 
 - MCQs are exported into `backend/data/mcqs_bank.csv` and `backend/data/mcqs_bank.json`
-- These generated files are ignored in git and can be recreated from the Excel workbook
+- These generated files are included for deployment so Railway does not need the Excel workbook at build time
 
 To regenerate exported MCQs:
 

@@ -18,7 +18,6 @@ RUN pip install --no-cache-dir -r backend/requirements.txt
 
 COPY backend/ ./backend/
 COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
-COPY ["nsct mcqs bank.xlsx", "./nsct mcqs bank.xlsx"]
 COPY README.md ./README.md
 
 EXPOSE 8000

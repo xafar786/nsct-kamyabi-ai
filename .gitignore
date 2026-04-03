@@ -5,9 +5,6 @@ venv/
 .env
 .env.*
 
-backend/data/mcqs_bank.csv
-backend/data/mcqs_bank.json
-
 frontend/node_modules/
 frontend/dist/
 
