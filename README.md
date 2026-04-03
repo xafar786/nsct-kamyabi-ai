@@ -66,6 +66,7 @@ Railway can deploy directly from GitHub. The Docker build now uses:
 - `python:3.13-slim` to run FastAPI and serve the built frontend
 
 If Railway previously failed with `npm: command not found`, redeploy after pushing this Dockerfile update.
+The app now reads Railway's `PORT` environment variable from Python directly during startup.
 
 ## GitHub Readiness
 
