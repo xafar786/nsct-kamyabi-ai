@@ -56,10 +56,16 @@ python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
 
 This repo includes:
 
+- `Dockerfile`
 - `railway.json`
 - `Procfile`
 
-Railway can deploy directly from GitHub. The configured flow builds the React frontend and starts the FastAPI app on `PORT`.
+Railway can deploy directly from GitHub. The Docker build now uses:
+
+- `node:22-alpine` to build the React frontend
+- `python:3.13-slim` to run FastAPI and serve the built frontend
+
+If Railway previously failed with `npm: command not found`, redeploy after pushing this Dockerfile update.
 
 ## GitHub Readiness
 
